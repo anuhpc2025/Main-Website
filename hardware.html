@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANU HPC 2025</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- Navigation Bar -->
+    <header>
+        <div class="logo"><a href="index.html">ANU <span>HPC</span></a></div>
+        <nav id="nav-desktop">
+            <a href="index.html#about">About</a>
+            <a href="/team">Team</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <nav id="nav-mobile">
+            <h2>
+                <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+                    &#8801;
+                </a>
+            </h2>
+        </nav>
+    </header>
+
+    <div id="links">
+        <a href="index.html#about" onclick="toggleMenu()">About</a>
+        <a href="/team" onclick="toggleMenu()">Team</a>
+        <a href="#contact" onclick="toggleMenu()">Contact</a>
+    </div>
+
+    <section id="services">
+        <div id="hardware-splash" class="box">
+            <!-- <img class="splash-image" src="cluster.jpg" /> -->
+        </div>
+        <div class="box">
+            <h2>Hardware</h2>
+            <p>
+                We utilised this node to foster our understanding on how to implement and operate a HPC Cluster.
+                <br>
+                <br>
+                For our competition cluster, we received hardware sponsorship from XENON. Our hardware architecture consists of four XENON NITRO GN29A Duo 2124GQ-NART+ nodes, each based on SuperMicro's robust AS-2124GQ-NART+ platform.
+                <br>
+                <br>
+                Each node is equipped with the following hardware.
+            </p>
+            <br>
+            <div class="hardware-mobile">
+                <table id="specs" >
+                    <table id="specs" class="hardware-desktop">
+                        <tr>
+                            <td id="spec">
+                                <img class="icon" src="icons/cpu.svg">
+                                <br>
+                                <br>
+                                <h3>CPU</h3>
+                                <br>
+                                8 × AMD EPYC™ 7313
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="spec">
+                                <img class="icon" src="icons/ram.svg">
+                                <br>
+                                <br>
+                                <h3>Memory</h3>
+                                <br>
+                                4 × 512GB RAM
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="spec">
+                                <img class="icon" src="icons/ssd.svg">
+                                <br>
+                                <br>
+                                <h3>Operating System</h3>
+                                <br>
+                                2 × 240GB M5400 Pro
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="spec">
+                                <img class="icon" src="icons/hdd.svg">
+                                <br>
+                                <br>
+                                <h3>Storage</h3>
+                                <br>
+                                4 × 1.9TB PM9A3
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="spec">
+                                <img class="icon" src="icons/gpu.svg">
+                                <br>
+                                <br>
+                                <h3>GPU</h3>
+                                <br>
+                                16 × NVIDIA A100 40GB SXM4
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="spec">
+                                <img class="icon" src="icons/power.svg">
+                                <br>
+                                <br>
+                                <h3>Power</h3>
+                                <br>
+                                Dual redundant 3000W Titanium per node
+                            </td>
+                        </tr>
+                    </table>
+                </table>
+            </div>
+            <div class="hardware-desktop">
+                <table id="specs" >
+                    <table id="specs" class="hardware-desktop">
+                        <tr>
+                            <td id="spec">
+                                <img class="icon" src="icons/cpu.svg">
+                                <br>
+                                <br>
+                                <h3>CPU</h3>
+                                <br>
+                                8 × AMD EPYC™ 7313
+                            </td>
+                            <td id="spec">
+                                <img class="icon" src="icons/ram.svg">
+                                <br>
+                                <br>
+                                <h3>Memory</h3>
+                                <br>
+                                4 × 512GB RAM
+                            </td>
+                            <td id="spec">
+                                <img class="icon" src="icons/ssd.svg">
+                                <br>
+                                <br>
+                                <h3>Operating System</h3>
+                                <br>
+                                2 × 240GB M5400 Pro
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="spec">
+                                <img class="icon" src="icons/hdd.svg">
+                                <br>
+                                <br>
+                                <h3>Storage</h3>
+                                <br>
+                                4 × 1.9TB PM9A3
+                            </td>
+                            <td id="spec">
+                                <img class="icon" src="icons/gpu.svg">
+                                <br>
+                                <br>
+                                <h3>GPU</h3>
+                                <br>
+                                16 × NVIDIA A100 40GB SXM4
+                            </td>
+                            <td id="spec">
+                                <img class="icon" src="icons/power.svg">
+                                <br>
+                                <br>
+                                <h3>Power</h3>
+                                <br>
+                                Dual redundant 3000W Titanium per node
+                            </td>
+                        </tr>
+                    </table>
+                </table>
+            </div>
+            <br>
+            <h3>Networking</h3>
+            <p>
+                <br>
+                High-Speed Network: Mellanox SX6025 InfiniBand switch (56Gb/s per port, 170ns latency, 4Tb/s total bandwidth) provides extremely fast inter-node communication, ideal for intensive computational tasks requiring minimal latency and maximum throughput.
+                <br><br>
+                Management & WAN Access: Dell PowerConnect 5548 managed switch with Layer 3 capabilities (48 × 1Gb/s ports) handles management traffic, internet access, and provides efficient routing for administrative and lower-priority network tasks.
+                <br><br>
+                This hardware setup is optimised for exceptional computational power and performance efficiency, well within a 10KW power budget.
+            </p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email us at <a id="eml" href="mailto:u7681327@anu.edu.au">u7681327@anu.edu.au</a></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Australian National University SC25 Team. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

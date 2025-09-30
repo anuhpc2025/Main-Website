@@ -1,0 +1,417 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #0e0e0e;
+    color: white;
+}
+
+h2 {
+    padding-bottom: 10px;;
+}
+
+h3 {
+    color: #227aff;
+    font-size: 30px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+p {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.splash-image {
+    height: 100%;
+}
+
+#hardware-splash {
+    background-image: url('cluster.jpg');
+    /* height: 25vh; */
+    min-height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#team-splash {
+    background-image: url('nci_team_public.jpg');
+    /* height: 25vh; */
+    min-height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#team-detail {
+    /* width: 90%; */
+    margin: auto;
+}
+
+.box {
+    margin-top: 20px !important; 
+    background-color: #1e1e1e;
+    align-content: center;
+    padding: 20px;
+    border-radius: 20px;
+    width: 90;
+    margin: auto;
+}
+
+.half-box {
+    margin-top: 20px !important; 
+    background-color: #1e1e1e;
+    /* align-content: center; */
+    text-align: left;
+    padding: 20px;
+    border-radius: 20px;
+    /* width: 100%; */
+    margin-top: auto;
+}
+
+.column {
+    box-sizing: border-box;
+    float: left;
+    width: 50%;
+    /* padding: 10px; */
+}
+
+.column-left {
+    padding-right: 10px;
+}
+
+.column-right {
+    padding-left: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    box-sizing: border-box;
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.about-me-img {
+    width: 7.5vh;
+    height: 7.5vh;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.about-top {
+    display: flex;
+}
+
+.about-detail {
+    line-height: 24px;
+}
+
+.name {
+    margin-left: 5px;
+    margin-top: 0.25em;
+    margin-left: 10px;
+    color: #227aff;
+    font-weight: bold;
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: rgba(20, 20, 20, 0.9);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #227aff;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 50px;
+    font-size: 1.2em;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    padding: 80px 10%;
+    position: relative;
+    z-index: -1;
+}
+
+.hero-text, .hero-large {
+    flex: 1;
+}
+
+.hero-text h1 {
+    font-size: 3.5em;
+    color: #227aff;
+}
+
+.hero-text p {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #ccc;
+}
+
+.hero-large h1 {
+    font-size: 5em;
+    color: #227aff;
+}
+
+.hero-large h2 {
+    font-size: 2.5em;
+    margin-top: 30px;
+    color: #ccc;
+}
+
+.cta-button {
+    position: absolute;
+    display: inline-block;
+    margin-top: 80vh;
+    padding: 12px 24px;
+    background: #227aff;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 1.2em;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.hero-image {
+    flex: 1;
+    text-align: center;
+}
+
+.hero-image img {
+    width: 600px;
+    max-width: 100%;
+}
+
+/* Sections */
+section {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+/* #about {
+    max-width: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+} */
+
+#services .service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    padding: 20px;
+}
+
+.service-card {
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    border-color: #227aff;
+    /* box-shadow: 0 0 15px rgba(34, 122, 255, 0.5); */
+    font-size: larger;
+}
+
+/* Footer */
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+#eml {
+    color: #227aff;
+}
+
+#specs {
+    display: flex;
+    position: relative;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    border-spacing: 20px;
+    align-content: center;
+    text-align: center;
+}
+
+#spec {
+    width: 33%;
+    padding: 20px;
+    background-color: #111;
+    border-radius: 20px;
+}
+
+.icon {
+    /* filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(164deg) brightness(103%) contrast(102%); white */
+    filter: invert(37%) sepia(85%) saturate(2799%) hue-rotate(205deg) brightness(101%) contrast(103%);
+    width: 40%;
+}
+
+@media (min-width: 768px) {
+    #nav-mobile {
+        display: none;
+    }
+
+    #links {
+        display: none;
+    }
+
+    .team-mobile {
+        display: none;
+    }
+
+    .hardware-mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    #nav-desktop {
+        display: none;
+    }
+
+    .team-desktop {
+        display: none;
+    }
+
+    .hardware-desktop {
+        display: none;
+    }
+    
+    /* Hide the links inside the navigation menu (except for logo/home) */
+    #links {
+        background-color: rgba(0, 0, 0, 0.5);
+        display: none;
+        position: fixed;
+        top: 83px;
+        width:100%;
+        z-index: 100;
+    }
+    
+    /* Style navigation menu links */
+    #links a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+    
+    /* Style the hamburger menu */
+    #links a.icon {
+        background: black;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    
+    /* Add a grey background color on mouse-over */
+    #links a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+    
+    /* Style the active link (or home/logo) */
+    .active {
+        background-color: #04AA6D;
+        color: white;
+    } 
+
+    /* Stack hero content vertically */
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-text {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .hero-text h1 {
+        font-size: 2rem; /* Reduce heading size */
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+    }
+
+    .hero-image img {
+        width: 80%; /* Scale planet image for smaller screens */
+        max-width: 300px;
+        margin-top: 20px;
+    }
+
+    /* Center navigation menu items */
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}

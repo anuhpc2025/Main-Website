@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANU HPC 2025</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="icon" type="image/x-icon" href="planet.png"> -->
+    <link href="planet.png" rel="shortcut icon">
+</head>
+<body>
+    
+    <!-- Navigation Bar -->
+    <header>
+        <div class="logo"><a href="index.html">ANU <span>HPC</span></a></div>
+        <nav id="nav-desktop">
+            <a href="#about">About</a>
+            <a href="team.html">Team</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <nav id="nav-mobile">
+            <h2>
+                <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+                    &#8801;
+                </a>
+            </h2>
+        </nav>
+    </header>
+
+    <div id="links">
+        <a href="#about" onclick="toggleMenu()">About</a>
+        <a href="/team" onclick="toggleMenu()">Team</a>
+        <a href="#contact" onclick="toggleMenu()">Contact</a>
+    </div>
+    
+    <!-- Hero Section -->
+    <a href="#about" class="cta-button">Find out more</a>
+    <section class="hero">
+        <canvas id="interactiveCanvas"></canvas>
+        <div class="hero-content">
+            <div class="hero-image">
+                <img src="planet.png" alt="Futuristic Planet">
+            </div>
+            <div class="hero-text">
+                <h1>Innovate.<br>Create.<br>Elevate.</h1>
+                <p>Cutting-edge High Performance Computing</p>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>
+            We are a team of third and fourth year undergraduate students with a strong interest in parallel computing hardware and software systems and the optimisation of scientific codes on HPC systems.
+            <br><br>
+            We have experience with system architecture design, working with multi-core processors, network configuration, software stack integration, and scientific application performance tuning.
+        </p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Project Details</h2>
+        <div class="service-grid">
+            <a href="team.html"><div class="service-card">Team</div></a>
+            <a href="hardware.html"><div class="service-card">Hardware</div></a>
+            <a href="software.html"><div class="service-card">Software</div></a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: <a id="eml" href="mailto:u7681327@anu.edu.au">u7681327@anu.edu.au</a></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Australian National University SC25 Team. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
