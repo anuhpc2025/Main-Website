@@ -47,9 +47,9 @@ p {
 }
 
 #team-splash {
-    background-image: url('nci_team_public.jpg');
+    background-image: url('team/Team.jpg');
     /* height: 25vh; */
-    min-height: 600px;
+    min-height: 850px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
