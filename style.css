@@ -47,30 +47,15 @@ p {
 }
 
 #team-splash {
-    background-image: url('team/Team.jpg');
-    height: 60vh;
-    min-height: 850px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    padding: 0;
+    background: none;
+    text-align: center;
 }
 
-@media (max-width: 1024px) {
-    #team-splash {
-        height: 50vh; /* Shrink slightly for tablets/laptops */
-    }
-}
-
-@media (max-width: 768px) {
-    #team-splash {
-        height: 40vh; /* Smaller for tablets/phones */
-    }
-}
-
-@media (max-width: 480px) {
-    #team-splash {
-        height: 30vh; /* Much smaller for tiny screens */
-    }
+#team-splash .splash-image {
+    width: 95%;
+    height: auto;   /* keeps full image proportion */
+    border-radius: 20px;
 }
 
 #team-detail {
@@ -89,7 +74,7 @@ p {
 }
 
 .half-box {
-    margin-top: 20px !important; 
+    margin-top: 20px !important;
     background-color: #1e1e1e;
     /* align-content: center; */
     text-align: left;
